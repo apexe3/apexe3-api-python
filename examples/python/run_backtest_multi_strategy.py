@@ -27,8 +27,8 @@ import json
 import pandas as pd
 
 def init():
-    clientId = "your-client-id-goes-here"
-    clientSecret = "your-client-secret-goes-here"
+    clientId = "dapi-astrosbadhabits-gmail-com"
+    clientSecret = "e64611c4-8237-44d7-a78a-53128f94cd9f"
     initialise(clientId, clientSecret)
 
 if __name__ == "__main__":
@@ -81,7 +81,7 @@ if __name__ == "__main__":
     }
 
     
-    result = run_backtest('10000', 'COINBASEPRO', 'BTC', 'USD', '01-07-2017', '31-12-2020', indicatorParams, multiStrategyParams,'1h', 'true')
+    result = run_backtest('10000', 'COINBASEPRO', 'BTC', 'USD', '2018-01-01', '2020-12-31', indicatorParams, multiStrategyParams,'1h', 'true', 'DIGITAL','SPOT')
     
     print(result['analysis'])
 
